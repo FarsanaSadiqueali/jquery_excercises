@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+         $('document').ready(function(){
+            $("button").click(function(event){
+                  return "Button clicked";
+             });
+             $("button").click(function(event){
+                  $("p").html(event.result);
+             });
+         });
+    </script>
+   
+</head>
+<body>
+        <button>Display event.result</button>
+        <p></p>
+        </body>
+        
+        
+</html>

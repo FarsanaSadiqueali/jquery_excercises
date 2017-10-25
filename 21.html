@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $('document').ready(function(){
+            $(function () {
+    $('input:checkbox').on('change', function () {
+        var input = $(this).next('span');
+        if (this.checked) {
+            $(input).css('textDecoration', 'line-through');
+        } else {
+            $(input).css('textDecoration', 'none');
+        }
+    })
+})
+                
+        });
+        
+    </script>
+    
+</head>
+<body>
+    <h2>Would like to eat</h2>
+            <input type="checkbox" name="food" value="fruits"><span>Fruits</span><br>
+            <input type="checkbox" name="food" value="Rice"><span>Rice</span><br>
+            <input type="checkbox" name="food" value="snacks"><span>Snacks</span><br>
+            <input type="checkbox" name="food" value="salad"><span>Salad</span><br>
+            <input type="checkbox" name="food" value="soups"><span>Soups</span> <br>
+            <input type="checkbox" name="food" value="biscuits"><span> Biscuits</span><br>
+            <input type="checkbox" name="food" value="juices" ><span>Juices</span> <br>
+        
+    </div>    
+</body>
+</html>
